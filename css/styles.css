@@ -106,13 +106,9 @@ h2:hover {
 }
 
 .text__estudio {
-    height: 100%;
-    text-align: center;
-    padding: 0px 300px;
-    text-justify: distribute;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+    text-align: left;
+    padding: 0 10px;
+    font-size: 16px; /* Default font size */
 }
 
 .title__estudio {
@@ -122,9 +118,19 @@ h2:hover {
 }
 
 .carousel-inner {
-    height: 600px;
+    position: relative;
     width: 100%;
-    object-fit: cover;
+    overflow: hidden;
+}
+
+.carousel-inner .carousel-item {
+    height: 400px; /* Set a fixed height for the carousel */
+}
+
+.carousel-img {
+    object-fit: cover; /* Ensures images cover the entire container without distortion */
+    height: 100%;
+    width: 100%;
 }
 
 .footer {
@@ -195,3 +201,51 @@ h2:hover {
 .tarjeta div p {
     text-align: center;
 }
+
+/* Media queries */
+
+    @media (max-width: 768px) {
+        .carousel-inner .carousel-item {
+            height: 300px; /* Adjust height for tablets */
+        }
+    
+        .title__estudio {
+            font-size: 20px;
+        }
+    
+        .text__estudio {
+            font-size: 14px;
+        }
+    
+        .p__tienda {
+            font-size: 16px;
+        }
+    }
+    
+    @media (max-width: 480px) {
+        .carousel-inner .carousel-item {
+            height: 200px; /* Adjust height for mobile phones */
+        }
+    
+        .item__presentacion {
+            font-size: 16px;
+        }
+    
+        .title__estudio {
+            font-size: 18px;
+        }
+    
+        .text__estudio {
+            font-size: 12px;
+        }
+    
+        .p__tienda {
+            font-size: 14px;
+        }
+    
+        .footer__item {
+            font-size: 12px;
+        }
+    }
+
+
