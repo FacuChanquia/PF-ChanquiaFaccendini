@@ -1,0 +1,46 @@
+/* Media queries */
+
+@media (max-width: 768px) {
+    .carousel-inner .carousel-item {
+        height: 300px; /* Adjust height for tablets */
+    }
+
+    .title__estudio {
+        font-size: 20px;
+    }
+
+    .text__estudio {
+        font-size: 14px;
+    }
+
+    .p__tienda {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .carousel-inner .carousel-item {
+        height: 200px; /* Adjust height for mobile phones */
+    }
+
+    .item__presentacion {
+        font-size: 16px;
+    }
+
+    .title__estudio {
+        font-size: 18px;
+    }
+
+    .text__estudio {
+        font-size: 12px;
+    }
+
+    .p__tienda {
+        font-size: 14px;
+    }
+
+    .footer__item {
+        font-size: 12px;
+    }
+}
+

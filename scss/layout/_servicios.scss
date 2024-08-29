@@ -1,0 +1,8 @@
+.page__title {
+    display: flex;
+    justify-content: center;
+    transition: 0.5s;
+    &:hover {
+        color: gray;
+    }
+}
