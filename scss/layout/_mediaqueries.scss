@@ -1,46 +1,151 @@
 /* Media queries */
 
+// @media (max-width: 768px) {
+//     .carousel-inner .carousel-item {
+//         height: 300px; 
+//     }
+
+//     .title__estudio {
+//         font-size: 20px;
+//     }
+
+//     .text__estudio {
+//         font-size: 14px;
+//     }
+
+//     .p__tienda {
+//         font-size: 16px;
+//     }
+
+//     .title__mapa {
+//         font-size: 20px;
+//     }
+
+//     .mapa {
+//         height: 350px; 
+//     }
+// }
+
+
+// @media (max-width: 480px) {
+//     .carousel-inner .carousel-item {
+//         height: 200px; 
+//     }
+
+//     .item__presentacion {
+//         font-size: 16px;
+//     }
+
+//     .title__estudio {
+//         font-size: 18px;
+//     }
+
+//     .text__estudio {
+//         font-size: 12px;
+//     }
+
+//     .p__tienda {
+//         font-size: 14px;
+//     }
+
+//     .footer__item {
+//         font-size: 12px;
+//     }
+
+//     .title__mapa {
+//         font-size: 18px;
+//     }
+
+//     .mapa {
+//         height: 250px; 
+//     }
+// }
+
+// @media (min-width: 769px) {
+//     .mapa {
+//         height: 450px; /* Ajusta la altura para pantallas grandes */
+//     }
+// }
+@media (min-width: 769px) {
+    .section__presentacion .title__presentacion {
+        font-size: 28px;
+    }
+
+    .section__title {
+        .h1__title {
+        font-size: 36px;
+        }
+    }
+
+    .section__estudio .title__estudio {
+        font-size: 28px;
+    }
+
+    .section__estudio .text__estudio {
+        font-size: 18px;
+    }
+
+    .div__mapa .title__mapa {
+        font-size: 48px;
+    }
+
+    .div__mapa .mapa {
+        height: 450px;
+    }
+}
+
 @media (max-width: 768px) {
-    .carousel-inner .carousel-item {
-        height: 300px; /* Adjust height for tablets */
+    .section__presentacion .title__presentacion {
+        font-size: 22px;
     }
 
-    .title__estudio {
-        font-size: 20px;
+    .section__title .h1__title {
+        font-size: 30px;
     }
 
-    .text__estudio {
-        font-size: 14px;
+    .section__estudio .title__estudio {
+        font-size: 24px;
     }
 
-    .p__tienda {
+    .section__estudio .text__estudio {
         font-size: 16px;
+    }
+
+    .div__mapa .title__mapa {
+        font-size: 24px;
+    }
+
+    .div__mapa .mapa {
+        height: 350px;
     }
 }
 
 @media (max-width: 480px) {
-    .carousel-inner .carousel-item {
-        height: 200px; /* Adjust height for mobile phones */
+    .section__presentacion .title__presentacion {
+        font-size: 20px;
     }
 
-    .item__presentacion {
-        font-size: 16px;
+    .section__title .h1__title {
+        font-size: 28px;
     }
 
-    .title__estudio {
-        font-size: 18px;
+    .section__estudio .title__estudio {
+        font-size: 22px;
     }
 
-    .text__estudio {
-        font-size: 12px;
-    }
-
-    .p__tienda {
+    .section__estudio .text__estudio {
         font-size: 14px;
     }
 
-    .footer__item {
+    .div__mapa .title__mapa {
+        font-size: 20px;
+    }
+
+    .div__mapa .mapa {
+        height: 250px;
+    }
+
+    footer .footer__item {
         font-size: 12px;
     }
 }
-

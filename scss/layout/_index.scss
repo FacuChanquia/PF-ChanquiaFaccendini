@@ -1,5 +1,5 @@
 .section__presentacion {
-    background-color: gray;
+    background-color: $color-beige;
     height: 500px;
     display: grid;
     .div__presentacion{
@@ -10,14 +10,14 @@
             text-align: left;
             width: 200px;
             margin-top: 100px;
-            color: white;
+            color: #191919;
             font-family: "Bebas Neue";
             font-weight: 400;
             font-style: normal;
             font-size: 48px;
             transition: 0.5s;
             &:hover {
-                color: #191919;
+                color: #5c5a5a;
             }
         }
     }
@@ -50,7 +50,7 @@
         .p__tienda {
             height: 100%;
             width: 340px;
-            background-color: #a9a9a9 ;
+            background-color: $color-lightbeige;
             border-radius: 50px;
             display: flex;
             justify-content: center;
@@ -58,26 +58,68 @@
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
+                text-decoration: none;
+                font-family: "Poppins", sans-serif;
             }
         }
     }
 }
 
 
-
-.div__estudio {
-    background-color: gray;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    .text__estudio {
-        text-align: left;
-        padding: 0 10px;
-        font-size: 16px; /* Default font size */
-    }
-    .title__estudio {
+.section__estudio {
+    margin: 15px;
+    margin-bottom: 50px;
+    .div__estudio {
+        background-color: #fff;
         display: flex;
+        flex-direction: column;
         justify-content: center;
-        margin-bottom: 0;
+        margin: 20px;
+        border-radius: 8px;
+        .text__estudio {
+            text-align: center;
+            padding: 0 10px;
+            font-size: 16px;
+            font-weight: 500;
+            font-family: "Poppins", sans-serif;
+        }
+        .title__estudio {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 7px;
+            margin-top: 10px;
+            font-weight: 700;
+            font-family: "Poppins", sans-serif;
+        }
+    }
+}
+
+
+.div__mapa {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    .title__mapa {
+        text-align: left;
+        width: 200px;
+        margin: 20px;
+        color: $color-black;
+        font-family: "Bebas Neue";
+        font-weight: 400;
+        font-style: normal;
+        font-size: 48px;
+        transition: 0.5s;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        &:hover {
+            color: #191919;
+        }
+    .mapa {
+        width: 100%;
+        height: 300px; 
+        max-width: 600px; 
+        border: 0;
+    }
     }
 }

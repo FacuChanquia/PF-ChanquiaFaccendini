@@ -1,7 +1,30 @@
-.navbar {
-    background-color: #a9a9a9;
-    .nav-link{
-        color: black;
-        transition: 0.5s;
+    .navbar {
+        background-color: gray;
+    
+        .container-fluid {
+            display: flex;
+            justify-content: center; 
+        }
+    
+        .collapse {
+            display: flex;
+            justify-content: center; 
+        }
+    
+        .navbar-nav {
+            display: flex;
+            justify-content: center; 
+            width: 100%; 
+        }
+    
+        .nav-item {
+            margin: 0 10px; 
+        }
+    
+        .nav-link {
+            color: black;
+            transition: 0.5s;
+        }
     }
-}
+
+
