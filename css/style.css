@@ -29,7 +29,9 @@ a:hover {
   overflow: hidden;
 }
 .carousel-inner .carousel-item {
+  width: 100%;
   height: 400px;
+  object-fit: cover;
 }
 
 .row {
@@ -43,8 +45,9 @@ a:hover {
 }
 .row article .tarjeta {
   display: flex;
-  align-items: center;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
   gap: 10px;
   width: 100%;
   background-color: gray;
@@ -87,19 +90,19 @@ a:hover {
 
 .footer {
   background-color: #F2E8C6;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
   height: 80px;
   margin-top: 10px;
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
+  gap: 0px;
 }
 .footer .footer__item {
   margin: 0px;
   font-family: "Poppins", sans-serif;
+  text-align: center;
   display: flex;
   justify-content: center;
 }
@@ -108,10 +111,6 @@ a:hover {
   background-color: gray;
 }
 .navbar .container-fluid {
-  display: flex;
-  justify-content: center;
-}
-.navbar .collapse {
   display: flex;
   justify-content: center;
 }
@@ -152,6 +151,11 @@ a:hover {
 .section__presentacion .div__presentacion h2:hover {
   color: #5c5a5a;
 }
+.section__presentacion .div__presentacion img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
 
 .section__title {
   height: 80px;
@@ -161,21 +165,27 @@ a:hover {
 .section__title .div__title {
   display: flex;
   flex-direction: column;
+  align-items: center;
   justify-content: center;
+  gap: 0px;
 }
 
 .section__tienda {
   height: 100px;
   display: flex;
   flex-direction: column;
+  align-items: center;
   justify-content: center;
+  gap: 0px;
 }
 .section__tienda .div__tienda {
   width: 100%;
   height: 50px;
   display: flex;
   flex-direction: row;
+  align-items: center;
   justify-content: center;
+  gap: 0px;
   border-radius: 25%;
 }
 .section__tienda .div__tienda .p__tienda {
@@ -189,7 +199,9 @@ a:hover {
 .section__tienda .div__tienda .p__tienda .a__tienda {
   display: flex;
   flex-direction: column;
+  align-items: center;
   justify-content: center;
+  gap: 0px;
   text-decoration: none;
   font-family: "Poppins", sans-serif;
 }
@@ -202,7 +214,9 @@ a:hover {
   background-color: #fff;
   display: flex;
   flex-direction: column;
+  align-items: center;
   justify-content: center;
+  gap: 0px;
   margin: 20px;
   border-radius: 8px;
 }
@@ -240,6 +254,8 @@ a:hover {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
+  gap: 0px;
 }
 .div__mapa .title__mapa:hover {
   color: #191919;
@@ -253,14 +269,16 @@ a:hover {
 
 .page__title {
   display: flex;
+  flex-direction: column;
+  align-items: center;
   justify-content: center;
+  gap: 0px;
   transition: 0.5s;
 }
 .page__title:hover {
   color: gray;
 }
 
-/* Media queries */
 @media (min-width: 769px) {
   .section__presentacion .title__presentacion {
     font-size: 28px;
@@ -300,6 +318,9 @@ a:hover {
   .div__mapa .mapa {
     height: 350px;
   }
+  .div__mapa .mapa {
+    height: 350px;
+  }
 }
 @media (max-width: 480px) {
   .section__presentacion .title__presentacion {
@@ -320,7 +341,7 @@ a:hover {
   .div__mapa .mapa {
     height: 250px;
   }
-  footer .footer__item {
+  .footer__item {
     font-size: 12px;
   }
 }

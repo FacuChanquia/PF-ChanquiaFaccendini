@@ -1,6 +1,6 @@
+//Servicios.html
 .page__title {
-    display: flex;
-    justify-content: center;
+    @include flex (column, center, center, 0px);
     transition: 0.5s;
     &:hover {
         color: gray;

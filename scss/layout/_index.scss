@@ -1,3 +1,4 @@
+//Index.html
 .section__presentacion {
     background-color: $color-beige;
     height: 500px;
@@ -20,6 +21,9 @@
                 color: #5c5a5a;
             }
         }
+        img {
+            @include imagenes (100%, 100%, cover);
+        }
     }
 }
 
@@ -28,24 +32,18 @@
     display: flex;
     justify-content: center;
     .div__title {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
+        @include flex (column, center, center, 0px);
     }
     
 }
 
 .section__tienda {
     height: 100px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    @include flex (column, center, center, 0px);
     .div__tienda {
         width: 100%;
         height: 50px;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
+        @include flex (row, center, center, 0px);
         border-radius: 25%;
         .p__tienda {
             height: 100%;
@@ -55,9 +53,7 @@
             display: flex;
             justify-content: center;
             .a__tienda {
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
+                @include flex (column, center, center, 0px);
                 text-decoration: none;
                 font-family: "Poppins", sans-serif;
             }
@@ -71,9 +67,7 @@
     margin-bottom: 50px;
     .div__estudio {
         background-color: #fff;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
+        @include flex (column, center, center, 0px);
         margin: 20px;
         border-radius: 8px;
         .text__estudio {
@@ -109,9 +103,7 @@
         font-style: normal;
         font-size: 48px;
         transition: 0.5s;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        @include flex (column, center, center, 0px);
         &:hover {
             color: #191919;
         }
