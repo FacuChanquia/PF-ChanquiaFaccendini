@@ -87,6 +87,9 @@ a:hover {
   margin-top: 10px;
   background-color: gray;
 }
+.row article .tarjeta:hover {
+  transform: scale(1.02);
+}
 
 .footer {
   background-color: #F2E8C6;
