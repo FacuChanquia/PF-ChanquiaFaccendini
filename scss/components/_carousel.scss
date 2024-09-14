@@ -3,6 +3,8 @@
     width: 100%;
     overflow: hidden;
     .carousel-item {
-        @include imagenes (100%, 400px, cover);
+        img {
+            @include imagenes (100%, 400px, cover);
+        }
     }
 }
