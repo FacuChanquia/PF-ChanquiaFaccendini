@@ -28,9 +28,9 @@ a:hover {
   width: 100%;
   overflow: hidden;
 }
-.carousel-inner .carousel-item {
+.carousel-inner .carousel-item img {
   width: 100%;
-  height: 400px;
+  height: 600px;
   object-fit: cover;
 }
 
@@ -75,6 +75,7 @@ a:hover {
 .row article .tarjeta div h2 {
   display: flex;
   justify-content: center;
+  text-align: center;
 }
 .row article .tarjeta div p {
   text-align: center;
@@ -173,39 +174,24 @@ a:hover {
   gap: 0px;
 }
 
-.section__tienda {
-  height: 100px;
+.section__about {
+  margin: 15px;
+  margin-bottom: 50px;
+}
+.section__about .div__about {
+  background-color: #fff;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   gap: 0px;
+  margin: 20px;
+  border-radius: 8px;
 }
-.section__tienda .div__tienda {
-  width: 100%;
-  height: 50px;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  gap: 0px;
-  border-radius: 25%;
-}
-.section__tienda .div__tienda .p__tienda {
-  height: 100%;
-  width: 340px;
-  background-color: #F2E8C6;
-  border-radius: 50px;
-  display: flex;
-  justify-content: center;
-}
-.section__tienda .div__tienda .p__tienda .a__tienda {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 0px;
-  text-decoration: none;
+.section__about .div__about .p__about {
+  text-align: center;
+  font-size: 18px;
+  font-weight: 500;
   font-family: "Poppins", sans-serif;
 }
 
@@ -326,14 +312,45 @@ a:hover {
   }
 }
 @media (max-width: 480px) {
-  .section__presentacion .title__presentacion {
-    font-size: 20px;
+  .section__presentacion {
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0px;
+  }
+  .section__presentacion .div__presentacion {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0px;
+    width: 100%;
+    height: 100%;
+  }
+  .section__presentacion .div__presentacion .title__presentacion {
+    font-size: 50px;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0px;
+  }
+  .section__presentacion .div__presentacion .item__presentacion {
+    display: none;
   }
   .section__title .h1__title {
     font-size: 28px;
   }
   .section__estudio .title__estudio {
     font-size: 22px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0px;
   }
   .section__estudio .text__estudio {
     font-size: 14px;

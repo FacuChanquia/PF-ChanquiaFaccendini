@@ -4,7 +4,7 @@
     overflow: hidden;
     .carousel-item {
         img {
-            @include imagenes (100%, 400px, cover);
+            @include imagenes (100%, 600px, cover);
         }
     }
 }
